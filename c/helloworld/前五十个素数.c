@@ -1,8 +1,14 @@
 #include <stdio.h>
 int main()
 {
+
     int x;
-    scanf("%d",&x);
+    int cnt=0;
+    for (x=2;cnt<50;x++)
+    
+    {
+    
+        
     int i;
     int isprime=1;
     for ( i =2; i <x; i++)
@@ -12,17 +18,15 @@ int main()
             isprime=0;
             break;
         }
+        
     }
     if (isprime==1)
     {
-        printf("%d是素数",x);
-    }else
-    {
-        printf("%d不是素数",x);
+        printf("%d是素数\n",x);
+    
+        cnt++;
     }
     
-    
-    
-
+    }
     return 0;
 }

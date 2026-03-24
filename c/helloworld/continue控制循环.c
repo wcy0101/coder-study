@@ -10,8 +10,10 @@ int main()
         if (x%i==0)
         {
             isprime=0;
-            break;
+            
+            continue;
         }
+        printf("i=%d\n",i);
     }
     if (isprime==1)
     {
@@ -21,8 +23,5 @@ int main()
         printf("%d不是素数",x);
     }
     
-    
-    
-
     return 0;
 }
